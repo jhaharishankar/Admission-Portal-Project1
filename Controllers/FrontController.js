@@ -45,7 +45,7 @@ class FrontController {
     }
     static register = async (req, res) => {
         try {
-            res.render("register", { message: req.flash("error"), msg: req.flash("success") });
+            res.render("Register", { message: req.flash("error"), msg: req.flash("success") });
         } catch (error) {
             console.log(error)
         }
